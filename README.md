@@ -8,6 +8,9 @@
   + structure du site
   + code source du site
   + un support avec diverses ressources utilisées
+    
+--------------------------------------------------------------------------------------------------
+
 
 > Screenshoot de la structuration des dossiers : 
 1. ![cropped-1600-900-811898](https://cdn.discordapp.com/attachments/1203964005866147850/1206548538964709376/image.png?ex=65dc68e4&is=65c9f3e4&hm=c7e4dd640d1f83d1288aece76ccc84e97a48d488eccf2b395eca3d0230df2fbe&)
