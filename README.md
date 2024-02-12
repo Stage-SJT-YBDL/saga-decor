@@ -27,6 +27,6 @@
   + Tsubasa
   + [Github](https://github.com/1Tsubasa)
   + [Site](https://clarity-corp/tsubasa)
-  + ![cropped-1600-900-811898](https://cdn.discordapp.com/attachments/1176662859011338272/1206545829003792394/pfp-ariana-grande-grande-Favim.com-6819733.jpg?ex=65dc665e&is=65c9f15e&hm=e9edf3f0e72f384af7d3161c6da16e02ea2339a23a961433f874aaca69fa85a5&)
+  + ![cropped-1600-900-811898](https://cdn.discordapp.com/attachments/1099120241822408824/1202932212027105320/AvatarMaker_2.png?ex=65d87b6c&is=65c6066c&hm=f4a2ba61f3c1933e09d310119990958b5354fee1847160054a56cc79418449ee&)
   
     
