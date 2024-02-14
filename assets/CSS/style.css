@@ -1,0 +1,181 @@
+/*Soft Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*General settings*/
+html {
+    font-family: "Bodoni Moda", serif;
+}
+img {
+    width: 100%;
+}
+/*Placement class*/
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: start;
+}
+.align-end {
+    align-items: end;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+/*Paddings and Margins class*/
+.mg2 {
+    margin: 2%;
+}
+.pd2{
+    padding: 2%;
+}
+.mgh2 {
+    margin: 0 2%;
+}
+.mgv2 {
+    margin: 2% 0;
+}
+.pdh2 {
+    padding: 0 2%;
+}
+.pdv2 {
+    padding: 2% 0;
+}
+
+.pdv5 {
+    padding: 5% 0;
+}
+
+.pdv10 {
+    padding: 10% 0;
+}
+
+.pdv12 {
+    padding: 12% 0;
+}
+
+.mgr1 {
+    margin: 1%;
+}
+.mgr2 {
+    margin: 2%;
+}
+/* Color Class */
+.bg-light-gray {
+    background-color: rgba(55,143,132,0.11);
+}
+
+.color-dark-aqua {
+    color: #008483;
+}
+
+.color-dark-blue {
+    color: #21759B;
+}
+
+.color-white {
+    color: #fbffff
+}
+
+/* input */
+
+input[type="radio"].radio-color-transparent {
+    appearance: none;
+    width:  20px;
+    height:  20px;
+    margin:  6px;
+    outline: none;
+    border:  2px solid #21759B;
+    border-radius:  50%;
+}
+input[type="radio"].radio-color-transparent:checked {
+    background-color: rgba(255,  255,  255,  0);
+    border:  2px solid #21759B;
+}
+input[type="radio"].radio-color-dark-blue {
+    appearance: none;
+    width:  20px;
+    height:  20px;
+    margin:  6px;
+    outline: none;
+    border:  2px solid #21759B;
+    border-radius:  50%;
+}
+
+input[type="radio"].radio-color-dark-blue:checked {
+    background-color: #21759B;
+}
+
+
+
+/* Text Class */
+.head-desc {
+    line-height: 20px;
+   white-space: pre-wrap;
+}
+.newH1 {
+    font-size: 64px;
+    font-style: initial;
+    font-family: "Bodoni Moda", serif;
+    font-weight: bold;
+}
+/* Advance creation class */
+.space05 {
+   margin: 0.5rem 0
+}
+
+.space1 {
+    margin: 1rem 0
+}
+.space1-5 {
+    margin: 1.5rem 0
+}
+
+/*Header*/
+.menu-container {
+    gap: 25px;
+    width: 100%;
+}
+.logo {
+    height: 65px;
+    width: 150px;
+}
+/* about */
+.about {
+    background-image: url("../media/img/Qui_Sommes_Nous/e0280645-3084-4371-9160-18198943fd2f 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+/* qui sommes nous? */
