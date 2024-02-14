@@ -96,8 +96,15 @@ img {
     background-color: rgba(55,143,132,0.11);
 }
 
+.bg-dark-aqua {
+    background-color: #008483
+}
 .color-dark-aqua {
     color: #008483;
+}
+
+.color-dark-green {
+    color: #253745;
 }
 
 .color-dark-blue {
@@ -149,6 +156,8 @@ input[type="radio"].radio-color-dark-blue:checked {
     font-style: initial;
     font-family: "Bodoni Moda", serif;
     font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+    font-weight: bold;
 }
 /* Advance creation class */
 .space05 {
@@ -178,4 +187,49 @@ input[type="radio"].radio-color-dark-blue:checked {
     background-size: cover;
     height: 85vh;
 }
-/* qui sommes nous? */
+
+/* offices */
+
+.offices {
+    background-image: url("../media/img/Entreprise/locaux 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+/* footer */
+.footer-container {
+    height: 180px;
+    background-color: #008483;
+}
+.footer-menu {
+    width: 100%;
+    color: white;
+}
+.white-line {
+    height: 1px;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+.cookie-container {
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.cookie-left {
+    width: 40%;
+    font-size: 12px;
+}
+.cookie-right {
+    width: 60%;
+    gap: 5%;
+}
+.cookie-button {
+    height: 40px;
+    width: 180px;
+    background-color: #21759B;
+    border-radius: 7px;
+    vertical-align: middle;
+    color: white;
+}
