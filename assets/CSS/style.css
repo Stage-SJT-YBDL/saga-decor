@@ -72,19 +72,15 @@ img {
 .pdv2 {
     padding: 2% 0;
 }
-
 .pdv5 {
     padding: 5% 0;
 }
-
 .pdv10 {
     padding: 10% 0;
 }
-
 .pdv12 {
     padding: 12% 0;
 }
-
 .mgr1 {
     margin: 1%;
 }
@@ -95,29 +91,23 @@ img {
 .bg-light-gray {
     background-color: rgba(55,143,132,0.11);
 }
-
 .bg-dark-aqua {
     background-color: #008483
 }
 .color-dark-aqua {
     color: #008483;
 }
-
 .color-dark-green {
     color: #253745;
 }
-
 .color-dark-blue {
     color: #21759B;
 }
-
 .color-white {
     color: #fbffff
 }
-
 /* input */
-
-input[type="radio"].radio-color-transparent {
+input[type="radio"].radio-color-transparent, input[type="radio"].radio-color-dark-blue  {
     appearance: none;
     width:  20px;
     height:  20px;
@@ -130,22 +120,9 @@ input[type="radio"].radio-color-transparent:checked {
     background-color: rgba(255,  255,  255,  0);
     border:  2px solid #21759B;
 }
-input[type="radio"].radio-color-dark-blue {
-    appearance: none;
-    width:  20px;
-    height:  20px;
-    margin:  6px;
-    outline: none;
-    border:  2px solid #21759B;
-    border-radius:  50%;
-}
-
 input[type="radio"].radio-color-dark-blue:checked {
     background-color: #21759B;
 }
-
-
-
 /* Text Class */
 .head-desc {
     line-height: 20px;
@@ -187,9 +164,7 @@ input[type="radio"].radio-color-dark-blue:checked {
     background-size: cover;
     height: 85vh;
 }
-
 /* offices */
-
 .offices {
     background-image: url("../media/img/Entreprise/locaux 1.png");
     background-repeat: no-repeat;
