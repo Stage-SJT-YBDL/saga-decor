@@ -1,0 +1,266 @@
+/*Soft Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*General settings*/
+html {
+    font-family: "Bodoni Moda", serif;
+}
+img {
+    width: 100%;
+}
+/*Placement class*/
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: start;
+}
+.align-end {
+    align-items: end;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+/*Paddings and Margins class*/
+.mg2 {
+    margin: 2%;
+}
+.pd2{
+    padding: 2%;
+}
+.mgh2 {
+    margin: 0 2%;
+}
+.mgv2 {
+    margin: 2% 0;
+}
+.pdh2 {
+    padding: 0 2%;
+}
+.pdv2 {
+    padding: 2% 0;
+}
+.pdv5 {
+    padding: 5% 0;
+}
+.pdv10 {
+    padding: 10% 0;
+}
+.pdv12 {
+    padding: 12% 0;
+}
+.mgr1 {
+    margin: 1%;
+}
+.mgr2 {
+    margin: 2%;
+}
+/* Color Class */
+.bg-light-gray {
+    background-color: rgba(55,143,132,0.11);
+}
+.bg-dark-aqua {
+    background-color: #008483
+}
+.color-dark-aqua {
+    color: #008483;
+}
+.color-dark-green {
+    color: #253745;
+}
+.color-dark-blue {
+    color: #21759B;
+}
+.color-white {
+    color: #fbffff
+}
+/* input */
+input[type="radio"].radio-color-transparent, input[type="radio"].radio-color-dark-blue  {
+    appearance: none;
+    width:  20px;
+    height:  20px;
+    margin:  6px;
+    outline: none;
+    border:  2px solid #21759B;
+    border-radius:  50%;
+}
+input[type="radio"].radio-color-transparent:checked {
+    background-color: rgba(255,  255,  255,  0);
+    border:  2px solid #21759B;
+}
+input[type="radio"].radio-color-dark-blue:checked {
+    background-color: #21759B;
+}
+/* Text Class */
+.head-desc {
+    line-height: 20px;
+   white-space: pre-wrap;
+}
+.newH1 {
+    font-size: 64px;
+    font-style: initial;
+    font-family: "Bodoni Moda", serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+    font-weight: bold;
+}
+/* Advance creation class */
+.space05 {
+   margin: 0.5rem 0
+}
+
+.space1 {
+    margin: 1rem 0
+}
+.space1-5 {
+    margin: 1.5rem 0
+}
+
+/*Header*/
+.menu-container {
+    gap: 25px;
+    width: 100%;
+}
+.logo {
+    height: 65px;
+    width: 150px;
+}
+/* about */
+.about {
+    background-image: url("../media/img/Qui_Sommes_Nous/e0280645-3084-4371-9160-18198943fd2f 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+/* offices */
+.offices {
+    background-image: url("../media/img/Entreprise/locaux 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+/* footer */
+.footer-container {
+    height: 180px;
+    background-color: #008483;
+}
+.footer-menu {
+    width: 100%;
+    color: white;
+}
+.white-line {
+    height: 1px;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+.cookie-container {
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.cookie-left {
+    width: 40%;
+    font-size: 12px;
+}
+.cookie-right {
+    width: 60%;
+    gap: 5%;
+}
+.cookie-button {
+    height: 40px;
+    width: 180px;
+    background-color: #21759B;
+    border-radius: 7px;
+    vertical-align: middle;
+    color: white;
+}
+
+/* ---PAGE GALERIE--- */
+
+
+.main-pg {
+    background-image: url(../MEDIA/IMG/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    
+}
+
+.title1 h2{
+    background-color: black; opacity: 49%;
+    color: white;
+    width: 460px ;
+    /* margin-top: 100px; */
+
+}
+.sec1 {
+    height: 100%;
+}
+/* .pagegarde{
+
+} */
+
+/* Bouton galerie */
+#presentationgalerie{
+    margin: 0 auto;
+    width: 80x; 
+    /* height:  40px; */
+    border-radius: 50px;
+    /* green boutton */
+    font-size: 32px;
+    background-color: rgba(0, 132, 132, 0.5);
+    border: none;
+    color: white;
+    backdrop-filter: blur (3px);
+    padding: 1%;
+    box-shadow: 2px 2px black;
+}
+
+.PUBGALERIE {
+    height: 35vh; 
+    width: 100%;
+}
+/* ARTICLE */
+.categorie-1{
+    height: 550px;
+    background-color: #253745;
+}
+.artc1{
+    width: 250px;
+    height: 150px;
+}
