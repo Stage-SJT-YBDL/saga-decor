@@ -17,113 +17,6 @@ html {
 img {
     width: 100%;
 }
-/*Placement class*/
-.flex {
-    display: flex;
-}
-.column {
-    flex-direction: column;
-}
-.row {
-    flex-direction: row;
-}
-.justify-start {
-    justify-content: flex-start;
-}
-.justify-end {
-    justify-content: flex-end;
-}
-.justify-center {
-    justify-content: center;
-}
-.justify-between {
-    justify-content: space-between;
-}
-.justify-around {
-    justify-content: space-around;
-}
-.justify-evenly {
-    justify-content: space-evenly;
-}
-.align-center {
-    align-items: center;
-}
-.align-start {
-    align-items: start;
-}
-.align-end {
-    align-items: end;
-}
-.text-center {
-    text-align: center;
-}
-.wrap {
-    flex-wrap: wrap;
-}
-/*Paddings and Margins class*/
-.mg2 {
-    margin: 2%;
-}
-.pd2{
-    padding: 2%;
-}
-.mgh2 {
-    margin: 0 2%;
-}
-.mgv2 {
-    margin: 2% 0;
-}
-.pdh2 {
-    padding: 0 2%;
-}
-.pdv2 {
-    padding: 2% 0;
-}
-.pdv5 {
-    padding: 5% 0;
-}
-.pdv10 {
-    padding: 10% 0;
-}
-.pdv12 {
-    padding: 12% 0;
-}
-.mgr1 {
-    margin: 1%;
-}
-.mgr2 {
-    margin: 2%;
-}
-/* Color Class */
-.bg-light-gray {
-    background-color: rgba(55,143,132,0.11);
-}
-.bg-dark-aqua {
-    background-color: #008483
-}
-.bg-dark {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.color-dark-aqua {
-    color: #008483;
-}
-.color-dark-green {
-    color: #253745;
-}
-.color-dark-blue {
-    color: #21759B;
-}
-.color-white {
-    color: #fbffff
-}
-.black-bg {
-    height: 140px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.blur {
-    backdrop-filter: blur(10px);
-}
 /* input */
 input[type="radio"].radio-color-transparent, input[type="radio"].radio-color-dark-blue  {
     appearance: none;
@@ -150,16 +43,6 @@ input[type="radio"].radio-color-dark-blue:checked {
     font-size: 64px;
     font-weight: bold;
     text-shadow: 1px 1px 1px white;
-}
-/* Advance creation class */
-.space05 {
-   margin: 0.5rem 0
-}
-.space1 {
-    margin: 1rem 0
-}
-.space1-5 {
-    margin: 1.5rem 0
 }
 /*Button*/
 .green-button {
@@ -198,6 +81,14 @@ input[type="radio"].radio-color-dark-blue:checked {
     height: 80px;
     font-size: 20px;
     padding: 1%;
+}
+/*Hover*/
+
+.menu-link a:hover {
+    color: #008483;
+}
+.footer-link:hover {
+    color: gray;
 }
 /*Header*/
 .menu-container {
@@ -387,6 +278,45 @@ input[type="radio"].radio-color-dark-blue:checked {
 }
 .art1, .art2, .art3, .art4, .art5, .art6 {
     height: 600px;
+}
+.main-pg {
+    background-image: url(../media/img/gallerie/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+}
+.sec1 {
+    min-height: 85vh;
+}
+.title1 h2{
+    background-color: black; opacity: 49%;
+    color: white;
+    width: 460px ;
+}
+ /* Bouton galerie */ 
+#presentationgalerie{
+    margin: 0 auto;
+    width: 80x; 
+    border-radius: 50px;
+    font-size: 32px;
+    background-color: rgba(0, 132, 132, 0.5);
+    border: none;
+    color: white;
+    backdrop-filter: blur (3px);
+    padding: 1%;
+    box-shadow: 2px 2px black;
+}
+/* ARTICLE */ 
+.categorie-1{
+    background-color: #253745;
+}
+.artc1 img{
+    width: 250px;
+    height: 150px;
+}
+.PUBGALERIE{
+   min-width: 85vh; 
 }
 /* footer */
 .footer-container {
