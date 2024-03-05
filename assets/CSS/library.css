@@ -97,6 +97,9 @@
 .color-white {
     color: #fbffff
 }
+.color-black {
+    color: black;
+}
 .black-bg {
     height: 140px;
     width: 100%;
