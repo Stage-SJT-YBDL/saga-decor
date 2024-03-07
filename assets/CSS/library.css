@@ -38,6 +38,9 @@
 .text-center {
     text-align: center;
 }
+.bold {
+    font-weight: bold;
+}
 .wrap {
     flex-wrap: wrap;
 }
