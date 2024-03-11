@@ -31,15 +31,6 @@
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/file-regular(1).svg" alt="icône pages">
             <p><a href="admin.html">Pages</a></p>
-        </div>
-        <div class="pages color-white">
-            <ul class="flex column">
-                <li class="color-black">- Accueil</li>
-                <li>- Qui sommes nous?</li>
-                <li>- Savoir faire</li>
-                <li>- Contact</li>
-                <li>- Galerie</li>
-            </ul>
         </div>    
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/envelope-regular.svg" alt="icône Messagerie">
@@ -47,7 +38,7 @@
         </div>
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/scale-unbalanced-flip-solid.svg" alt="icône gestion des droits">
-            <p><a href="gestion-droits.php">Gestion des droits</a></p>    
+            <p><a href="#">Gestion des droits</a></p>    
         </div>
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/palette-solid.svg" alt="icône thèmes">
@@ -81,65 +72,57 @@
                     <thead>
                         <tr class="bold">
                             <th>N°</th>
-                            <th>TITRE</th>
-                            <th>AUTEUR</th>
-                            <th>MODIFIE LE</th>
+                            <th>Nom</th>
+                            <th>Email</th>
                             <th>ACTIF</th>
                             <th>EDITION</th>
                             <th>SUPPRESSION</th>
                         </tr>
                     </thead>
                     <tbody>
+                    <?php 
+                    try {
+                        include('constant_bdd.php');
+                        // préparation de la requête SQL sécurisée pour sélectionner les produits
+                        $sql = "SELECT * FROM  admin";
+                        $qry = $conn->prepare($sql);
+                        $qry->execute();
+                        $admins = $qry->fetchAll(PDO::FETCH_ASSOC);
+                        foreach ($admins as $admin) {
+                        ?>  
                         <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
+                            <td><?= $admin["admin_id"] ?></td>
+                            <td><?= $admin["admin_pseudo"] ?></td>
+                            <td><?= $admin["admin_email"] ?></td>
                             <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
                             <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
+                            <td>
+                                <form action="delete_admin.php" method="post">
+                                    <input type="hidden" name="admin_id" value="<?= $admin["admin_id"] ?>">
+                                    <button type="submit" style="border: none; background-color: transparent;">
+                                        <img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon">
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
-                            <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
-                            <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
-                            <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
-                            <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
-                        </tr>
+                        <?php  
+                        }   
+                        } catch(PDOException $err) {
+                            //    création d'une connexion
+                            echo " Erreur :" .$err->getMessage();
+                            var_dump($err);
+
+                        }
+                        //    Fermeture de la base de données
+                        $pdo = null;
+
+                            ?>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
+  
 </main>
 <footer>
     <div class="footer-container">
