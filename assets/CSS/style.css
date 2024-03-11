@@ -136,11 +136,30 @@ input[type="radio"].radio-color-dark-blue:checked {
     height: 100px;
     width: 200px;
 }
+.admin-submenu {
+    display: none;
+    right: 0;
+    top: 105px;
+    position: absolute;
+    width: 200px;
+    background-color: white;
+}
+.admin-link {
+    padding: 2%;
+    font-size: 24px;
+}
+.icon-admin {
+    height: 35px;
+    width: 35px;
+}
+.icon-admin:hover + .admin-submenu {
+    display: block;
+}
 /*Backgrounds*/
 .about, .offices, .contact, .home, .abt {
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 89vh;
 }
 .home {
     background-image: url("../media/img/home/home-bg.jpg");
@@ -403,11 +422,14 @@ input[type="radio"].radio-color-dark-blue:checked {
     font-weight: bolder;
     width: 550px;
 }
-.contact-left form input, .contact-left form textarea {
+.contact-left form input, .contact-left form textarea, .contact-right form input {
     border-radius: 10px;
     min-height: 45px;
     width: 500px;
     padding: 2%;
+}
+.contact-right {
+    height: 100%;
 }
 .contact-input {
     gap: 20px;
