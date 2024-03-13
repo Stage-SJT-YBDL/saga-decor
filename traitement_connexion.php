@@ -22,10 +22,10 @@ try {
         throw new Exception("Mot de passe incorrect");
     }
     $_SESSION['admin'] = $admin;
-    header("Location:admin.html");
+    header("Location:admin.php");
     exit();
 } catch (Exception $e) {
     echo "Erreur : " . $e->getMessage();
-    echo "<a href='news.html'>Revenir sur la page d'accueil</a>";
+    echo "<a href='news.php'>Revenir sur la page d'accueil</a>";
     exit();
 }

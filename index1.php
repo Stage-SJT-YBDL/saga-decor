@@ -1,5 +1,5 @@
 <?php
-include('header.php');
+ include('header.php');
 ?>
 <main>
     <section class="home flex justify-center align-center">
@@ -83,7 +83,6 @@ include('header.php');
         </div>
     </section>
 </main>
-
 <?php
  include('footer.php');
 ?>

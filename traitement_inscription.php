@@ -41,12 +41,12 @@ try {
         'first_name' => $first_name,
         'last_name' => $last_name
     ]);
-    header("Location:admin.html");
+    header("Location:admin.php");
     exit(); // Arrêt du script après redirection
 } catch (Exception $e) { // remplacer Exception par PDOException si problème de connexion BDD 
     // Gestion de l'erreur
     echo "Erreur : " . $e->getMessage();
-    echo "<a href='news.html'>Revenir sur la page d'accueil</a>";
+    echo "<a href='news.php'>Revenir sur la page d'accueil</a>";
     exit();
 }
 ?>

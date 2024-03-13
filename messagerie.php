@@ -8,15 +8,6 @@
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/file-regular(1).svg" alt="icône pages">
             <p><a href="admin.php">Pages</a></p>
-        </div>
-        <div class="pages color-white">
-            <ul class="flex column">
-                <li class="color-black">- Accueil</li>
-                <li>- Qui sommes nous?</li>
-                <li>- Savoir faire</li>
-                <li>- Contact</li>
-                <li>- Galerie</li>
-            </ul>
         </div>    
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/envelope-regular.svg" alt="icône Messagerie">
@@ -39,8 +30,8 @@
         <div class="admin-screen-main">
             <div class="admin-top flex justify-between panel-icon">
                 <div class="flex align-center">
-                    <img class="panel-icon" src="./assets/media/img/admin/file-regular.svg" alt="icône page">
-                    <p>Accueil</p>
+                    <img class="panel-icon" src="./assets/media/img/admin/envelope-regular-black.svg" alt="icône page">
+                    <p>Messagerie</p>
                 </div>
                 <div class="flex align-center">
                     <img class="panel-icon" src="./assets/media/img/admin/magnifying-glass-solid.svg" alt="icône recherche">
@@ -50,7 +41,7 @@
                 </div>
                 <div class="flex align-center">
                     <img class="panel-icon" src="./assets/media/img/admin/add-article.png" alt="icône ajouter article">
-                    <p>Nouvel article</p>
+                    <p>Nouveau message</p>
                 </div>
             </div>
             <div class="admin-line">
@@ -58,11 +49,11 @@
                     <thead>
                         <tr class="bold">
                             <th>N°</th>
-                            <th>TITRE</th>
-                            <th>AUTEUR</th>
-                            <th>MODIFIE LE</th>
-                            <th>ACTIF</th>
-                            <th>EDITION</th>
+                            <th>OBJET</th>
+                            <th>EXPEDITEUR</th>
+                            <th>RECU LE</th>
+                            <th>LU / NON LU</th>
+                            <th>REPONDRE</th>
                             <th>SUPPRESSION</th>
                         </tr>
                     </thead>
