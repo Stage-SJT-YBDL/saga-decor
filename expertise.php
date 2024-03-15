@@ -9,7 +9,7 @@
                         NOTRE SAVOIR FAIRE <br> Nos Solutions Décor
                     </p>
                 </div>
-                    <div class="space35-5"></div>
+                <div class="space35-5"></div>
                 <div class="flex justify-center">
                     <button class="square-btn blur-btn">Nos Collections de bouteilles</button>
                 </div>
@@ -71,8 +71,8 @@
                     <div class="et-container"><h2 class="expertise-title">Laquage</h2></div>
                 </article>
                 <article class="art6 expertise-article flex column justify-around align-center">
-                     <h2>Satinage avec fenêtre</h2>
-                     <p class="text-center">La sérigraphie permet une multitude d’effets des plus variés :
+                    <h2>Satinage avec fenêtre</h2>
+                    <p class="text-center">La sérigraphie permet une multitude d’effets des plus variés :
                         Luminescent : l’encre ou l’émail se révèle à la lumière noire
                         Thermosensible : l’encre se révèle au chaud ou au froid
                         Odorant : l’odeur se révèle après frottement avec les doigts
@@ -93,12 +93,14 @@
             </div>
         </section>
         <section class="arte bg-arte bg-black">
-            <div class="flex justify-center pdv2">
+            <div class="flex justify-center">
                 <img class="expertimg" src="./assets/media/img/Articles/679bf07c-223b-46c7-8202-c4c30d34bb0c.webp">
             </div>
         </section>
         <section>
-            <img src="./assets/media/img/Articles/Rectangle%2085.png">
+            <div class="flex justify-center">
+                <img src="./assets/media/img/Articles/Rectangle%2085.png">
+            </div>
         </section>
     </main>
     
