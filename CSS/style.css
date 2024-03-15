@@ -432,10 +432,8 @@ input[type="radio"].radio-color-dark-blue:checked {
     background-size: cover;
     min-height: 85vh;
 }
-.bg-arte {
-    background-image: url("../media/img/Background/Rectangle 82.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.expertimg {
+    height: 120px;
 }
 .para {
     white-space: pre-line;
@@ -477,6 +475,13 @@ input[type="radio"].radio-color-dark-blue:checked {
 }
 .expertimg {
     height: 475px;
+}
+
+/* Expertise HOVER */
+.art1:hover, .art2:hover, .art3:hover, .art4:hover, .art5:hover, .art6:hover {
+    /* l image s'agrandit */
+    width: 100%;
+    transition: 1s ease;
 }
 /*            GALLERY           */
 .main-pg {
