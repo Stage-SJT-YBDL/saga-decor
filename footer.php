@@ -34,5 +34,4 @@
     </div>
 </footer>
 </body>
-<script async src="./assets/JS/index.js"></script>
 </html>

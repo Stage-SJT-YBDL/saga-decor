@@ -1,3 +1,4 @@
+
 <?php
  include('header.php');
 ?>
@@ -17,24 +18,24 @@
         </section>
         <section class="article">
             <div class="flex">
-                <article class="art1 expertise-article flex justify-center">
+                <article class="art1 expertise-article flex justify-center" id="art1">
                     <div class="et-container"><h2 class="expertise-title">Sérigraphie</h2></div>
                 </article>
                 <article class="art2 expertise-article flex column justify-around align-center">
                     <h2>Sérigraphies</h2>
                     <p class="text-center">La sérigraphie permet une multitude d’effets des plus variés :
-                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
-                        Thermosensible : l’encre se révèle au chaud ou au froid
-                        Odorant : l’odeur se révèle après frottement avec les doigts
+                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
+                        Thermosensible : l’encre se révèle au chaud ou au froid
+                        Odorant : l’odeur se révèle après frottement avec les doigts
                         Effet tableau noir ou tableau blanc
                         Rendus texturés
                         Rendu mat/brillant
                         Couleurs fluorescentes</p>
                     <h2>Effets variés</h2>
                     <p class="text-center">La sérigraphie permet une multitude d’effets des plus variés :
-                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
-                        Thermosensible : l’encre se révèle au chaud ou au froid
-                        Odorant : l’odeur se révèle après frottement avec les doigts
+                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
+                        Thermosensible : l’encre se révèle au chaud ou au froid
+                        Odorant : l’odeur se révèle après frottement avec les doigts
                         Effet tableau noir ou tableau blanc
                         Rendus texturés
                         Rendu mat/brillant
@@ -45,18 +46,18 @@
                 <article class="art3 expertise-article flex column justify-around align-center">
                     <h2>Satinage avec fenêtre</h2>
                     <p class="text-center">La sérigraphie permet une multitude d’effets des plus variés :
-                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
-                        Thermosensible : l’encre se révèle au chaud ou au froid
-                        Odorant : l’odeur se révèle après frottement avec les doigts
+                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
+                        Thermosensible : l’encre se révèle au chaud ou au froid
+                        Odorant : l’odeur se révèle après frottement avec les doigts
                         Effet tableau noir ou tableau blanc
                         Rendus texturés
                         Rendu mat/brillant
                         Couleurs fluorescentes</p>
                     <h2>Effets variés</h2>
                     <p class="text-center">La sérigraphie permet une multitude d’effets des plus variés :
-                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
-                        Thermosensible : l’encre se révèle au chaud ou au froid
-                        Odorant : l’odeur se révèle après frottement avec les doigts
+                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
+                        Thermosensible : l’encre se révèle au chaud ou au froid
+                        Odorant : l’odeur se révèle après frottement avec les doigts
                         Effet tableau noir ou tableau blanc
                         Rendus texturés
                         Rendu mat/brillant
@@ -73,18 +74,18 @@
                 <article class="art6 expertise-article flex column justify-around align-center">
                     <h2>Satinage avec fenêtre</h2>
                     <p class="text-center">La sérigraphie permet une multitude d’effets des plus variés :
-                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
-                        Thermosensible : l’encre se révèle au chaud ou au froid
-                        Odorant : l’odeur se révèle après frottement avec les doigts
+                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
+                        Thermosensible : l’encre se révèle au chaud ou au froid
+                        Odorant : l’odeur se révèle après frottement avec les doigts
                         Effet tableau noir ou tableau blanc
                         Rendus texturés
                         Rendu mat/brillant
                         Couleurs fluorescentes</p>
                     <h2>Effets variés</h2>
                     <p class="text-center">La sérigraphie permet une multitude d’effets des plus variés :
-                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
-                        Thermosensible : l’encre se révèle au chaud ou au froid
-                        Odorant : l’odeur se révèle après frottement avec les doigts
+                        Luminescent : l’encre ou l’émail se révèle à la lumière noire
+                        Thermosensible : l’encre se révèle au chaud ou au froid
+                        Odorant : l’odeur se révèle après frottement avec les doigts
                         Effet tableau noir ou tableau blanc
                         Rendus texturés
                         Rendu mat/brillant

@@ -3,7 +3,9 @@
 ?>
 <main>
     <section class="about">
-        <video id="vid" src="./assets/media/vid/Bleu clair et Blanc EntrepriseTravail à distance 169 Vidéo (1920 x 750 px).mp4" style="width: 100%;" autoplay muted loop></video>
+        <div>
+            <video id="vid" src="./assets/media/vid/about-vid.mp4" style="width: 100%;" autoplay muted loop></video>
+        </div>
     </section>
     <section class="bg-dark-aqua">
         <div class="transparent-black-box flex justify-center align-center ">
@@ -61,40 +63,53 @@
 
     <section>
         <div class="flex justify-center align-center">
-            <div class="image-container mgr2">
-                <img src="./assets/media/img/Entreprise/prod1%202.png" alt="prod1">
-                <div class="transparent-black-container flex justify-center align-center pdv5 mgr2">
-                    <h1>5 </h1>
-                    <p class="color-white"> - Lignes de sérigraphie</p>
+            <div class="image-container">
+                <img class="about-article" src="./assets/media/img/Entreprise/about1.webp" alt="image production 1">
+                <div class=" flex justify-center align-center">
+                    <p>
+                        "Notre ligne de production avancée intègre des machines de pointe pour le soufflage et le formage du verre,
+                         garantissant une précision et une qualité inégalées dans la création de chaque bouteille décorée."
+                    </p>
                 </div>
             </div>
-            <div class="image-container mgr2">
-                <img src="./assets/media/img/Entreprise/prod1%202.png" alt="prod1">
-                <div class="transparent-black-container flex justify-center align-center pdv5 mgr2">
-                    <h1>5 </h1>
-                    <p class="color-white"> - Lignes de sérigraphie</p>
+            <div class="image-container">
+                <img class="about-article" src="./assets/media/img/Entreprise/about2.webp" alt="image production 2">
+                <div class="flex justify-center align-center">
+                    <p>
+                        "Au cœur de notre atelier, des artisans expérimentés
+                        et des machines de décoration travaillent de concert pour appliquer
+                        des motifs uniques sur chaque bouteille,
+                        fusionnant art traditionnel et innovation technologique."
+                    </p>
                 </div>
             </div>
         </div>
         <div class="flex justify-center align-center">
-            <div class="image-container mgr2">
-                <img src="./assets/media/img/Entreprise/prod1%202.png" alt="prod1">
-                <div class="transparent-black-container flex justify-center align-center pdv5 mgr2">
-                    <h1>5 </h1>
-                    <p class="color-white"> - Lignes de sérigraphie</p>
+            <div class="image-container">
+                <img class="about-article" src="./assets/media/img/Entreprise/about3.webp" alt="image production 3">
+                <div class="flex justify-center align-center">
+                    <p>
+                        "Notre processus de contrôle qualité utilise des technologies
+                        de pointe pour inspecter minutieusement chaque bouteille décorée,
+                        assurant que seuls les produits répondant à nos standards élevés atteignent nos clients."
+                    </p>
                 </div>
             </div>
-            <div class="image-container mgr2">
-                <img src="./assets/media/img/Entreprise/prod1%202.png" alt="prod1">
-                <div class="transparent-black-container flex justify-center align-center pdv5 mgr2">
-                    <h1>5 </h1>
-                    <p class="color-white"> - Lignes de sérigraphie</p>
+            <div class="image-container">
+                <img class="about-article" src="./assets/media/img/Entreprise/about4.webp" alt="image production 4">
+                <div class="flex justify-center align-center">
+                    <p>
+                        "La phase finale de notre chaîne de production
+                        implique un système d'emballage automatisé et hautement efficace,
+                        veillant à ce que chaque bouteille décorée soit prête pour la distribution,
+                        tout en maintenant l'intégrité et l'esthétique du produit."
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 </main>
-
+<script async src="assets/JS/about.js"></script>
 <?php
   include('footer.php');
 ?>

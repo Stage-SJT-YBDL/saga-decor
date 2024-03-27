@@ -83,7 +83,7 @@ include('header.php');
         </div>
     </section>
 </main>
-
+<script async src="assets/JS/index.js"></script>    
 <?php
  include('footer.php');
 ?>

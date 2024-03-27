@@ -12,7 +12,7 @@
 <header>
     <nav class="nav-container flex justify-between mgr2">
         <span class="logo-container">
-            <a href="index.php"><img src="assets/media/img/header/Design sans titre.png" alt="logo Saga decor" class="logo"></a>
+            <a href="index.php"><img src="assets/media/img/header/logo.png" alt="logo Saga decor" class="logo"></a>
         </span>
         <ul class="menu-container flex align-center justify-evenly">
             <li class="menu-link"><a href="#">Administration</a></li>
@@ -21,7 +21,7 @@
             <img class="user-icon" src="./assets/media/img/admin/user.png" alt="photo de profil">
             <p class="username">Jean Décor</p>
             <img class="icon" src="./assets/media/img/admin/power-off-solid.svg" alt="Bouton de déconnexion">
-            <img class="icon" src="./assets/media/img/admin/bars-solid.svg" alt="Bouton menu burger">
+            <a href="index.php"><img class="icon" src="./assets/media/img/admin/bars-solid.svg" alt="Bouton menu burger"></a>
         </div>
     </nav>
 </header>

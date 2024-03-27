@@ -25,7 +25,6 @@
                 Grâce à leur expertise et à leur passion pour la décoration de bouteilles, Pôle Décor se positionne comme un acteur majeur dans l'industrie. Leur objectif est de créer des designs de bouteilles exceptionnels qui captivent l'attention des consommateurs et renforcent l'image de marque des produits.
                
             </p>
-       
     </section>
     <div class="ima"></div> 
     <section class="Actualités">
@@ -88,7 +87,8 @@
                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi nostrum inventor</p>
             </div>
         </div> 
-    </div>     
+    </div>
+    <script src="assets/JS/news.js"></script>     
 <?php
- include('footer_news.php');
+ include('footer.php');
 ?>

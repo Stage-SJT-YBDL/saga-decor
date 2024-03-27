@@ -18,7 +18,7 @@
         </div>
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/palette-solid.svg" alt="icône thèmes">
-            <p><a href="#">Thèmes</a></p>    
+            <p><a href="themes.php">Thèmes</a></p>    
         </div>
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/gear-solid.svg" alt="icône maintenance">
