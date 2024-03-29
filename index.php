@@ -33,8 +33,8 @@ include('header.php');
     </div>
     <section class="activities flex column justify-center align-center">
         <div class="flex justify-center align-center">
-            <div class="act1 flex column align-end justify-center color-white">
-                <h2 class="act-ttl1">Sérigraphie</h2>
+            <div class="act1 flex column align-center justify-center color-white">
+                <h2 id="ttl1" class="act-ttl1">Sérigraphie</h2>
                 <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
                 repudiandae architecto nulla illo itaque commodi vitae placeat,
@@ -42,7 +42,7 @@ include('header.php');
                 </p>
                 <button class="square-orange-button" style="width: 150px;">Voir</button>
             </div>
-            <div id="act2" class="act2 flex column align-end justify-center color-white">
+            <div id="act2" class="act2 flex column align-center justify-center color-white">
                 <h2 class="act-ttl1">Laquage</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
@@ -53,7 +53,7 @@ include('header.php');
             </div>
         </div>
         <div class="flex">
-            <div id="act3" class="act3 flex column align-end justify-center color-white">
+            <div id="act3" class="act3 flex column align-center justify-center color-white">
                   <h2 class="act-ttl1">Satinage</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
@@ -62,7 +62,7 @@ include('header.php');
                 </p>
                 <button class="square-orange-button" style="width: 150px;">Voir</button>
             </div>
-            <div class="act4 flex column align-end justify-center color-white">
+            <div class="act4 flex column align-center justify-center color-white">
                 <h2 class="act-ttl1">Accessoires</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
@@ -72,14 +72,14 @@ include('header.php');
                 <button class="square-orange-button" style="width: 150px;">Voir</button>
             </div>
         </div>
-        <div class="act5 flex column align-end justify-center color-white">
+        <div class="act5 flex column align-center justify-center color-white">
             <h2 class="act-ttl1">Métallisation</h2>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
                 repudiandae architecto nulla illo itaque commodi vitae placeat,
                 temporibus sapiente consequuntur ea repellat voluptatem nostrum, ipsam dicta.
             </p>
-            <button class="square-orange-button" style="width: 180px; margin-right: 20%;">Voir</button>
+            <button class="square-orange-button" style="width: 180px;">Voir</button>
         </div>
     </section>
 </main>
