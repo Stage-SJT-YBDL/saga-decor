@@ -29,17 +29,23 @@
 
     <section class="gallery">
         <article class="flex column align-center">
-            <div class="gallery-odd flex galleryslide justify-between align-end">
-                <div class="chevron chevron-left"><img src="./assets/media/img/gallerie/chevron-left-solid.svg" alt="chevron gauche"></div>
-                <img class="glr-minia" src="./assets/media/img/sagadecor/Mamont.png" alt="">
-                <img class="glr1" src="./assets/media/img/sagadecor/martell.png" alt="Bouteille en laquage">
-                <img class="glr-minia" src="./assets/media/img/sagadecor/Belle-Epoque.png" alt="">
-                <div class="chevron chevron-right"><img src="./assets/media/img/gallerie/chevron-right-solid.svg" alt="chevron droit"></div>
+            <div class="gallery-odd flex justify-between align-end">
+                <div class="chevron chevron-left">
+                    <button class="btn" id="prev-btn" onclick="changeSlide(1)">&lt;</button>
+                </div>
+                <div class="galleryslide">
+                    <img class="glr-minia" src="./assets/media/img/sagadecor/Mamont.png" alt="" id="change">
+                    <img class="glr1" src="./assets/media/img/sagadecor/martell.png" alt="Bouteille en laquage" id="change2">
+                    <img class="glr-minia" src="./assets/media/img/sagadecor/Belle-Epoque.png" alt="" id="change3">
+                </div>
+                <div class="chevron chevron-right">
+                    <button class="btn" id="next-btn" onclick="changeSlide(-1)">&gt;</button>
+                </div>
             </div>
         </article>
     </section>
 </main>
-
+<script src="assets/JS/gallery.js"></script>
 <?php
  include('footer.php');
 ?>

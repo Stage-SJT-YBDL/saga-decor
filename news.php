@@ -3,7 +3,7 @@
 ?>
 
     <section>
-    <video id="vid" class="vi-saga" src="./assets/media/vid/video-saga.webm" style="width: 100%;" autoplay muted loop></video>
+    <video id="vid" class="vi-saga" src="./assets/media/vid/Bienvenue au pôle décor.mp4" style="width: 100%;" autoplay muted loop></video>
     </section>
     <section class="sec">
         <h2>Pôle Décor</h2>

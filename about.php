@@ -4,7 +4,7 @@
 <main>
     <section class="about">
         <div>
-            <video id="vid" src="./assets/media/vid/about-vid.mp4" style="width: 100%;" autoplay muted loop></video>
+            <video id="vid" src="./assets/media/vid/qsn.mp4" style="width: 100%;" autoplay muted loop></video>
         </div>
     </section>
     <section class="bg-dark-aqua">

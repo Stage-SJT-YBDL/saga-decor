@@ -2,33 +2,36 @@
 include('header.php');
 ?>
 <main>
-    <section class="home flex justify-center align-center">
-     <h1 class="newH1 appear color-white title-box">Pôle Décor</h1>
+    <section class="home flex column justify-center align-center">
+        
+        <h1 class="home-title newH1 appear title-box flex column align-center">
+        <img class="fusion" src="./assets/media/img/home/fusion.png" alt="image fusion">
+            <div>
+            <span class="pole">Pôle</span><span class="decor">Décor</span>
+            </div>
+        </h1>
     </section>
-    <section class="valors flex pd2 align-center">
-        <h2 class="color-dark-aqua">Valeurs du groupe</h2>
-        <p class="vignets" id="vignet1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis ab dolorem molestiae quis ullam.
-           Sunt iure eveniet numquam necessitatibus possimus eaque ipsa,
-           eius officiis maxime nostrum rerum asperiores aperiam est sapiente.
-           Adipisci, quia nisi aut ducimus voluptatem dolor beatae nobis voluptate non odio.
-           Voluptas nostrum hic consectetur cumque, voluptatibus quo.
-        </p>
-        <p class="vignets" id="vignet2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis ab dolorem molestiae quis ullam.
-           Sunt iure eveniet numquam necessitatibus possimus eaque ipsa,
-           eius officiis maxime nostrum rerum asperiores aperiam est sapiente.
-           Adipisci, quia nisi aut ducimus voluptatem dolor beatae nobis voluptate non odio.
-           Voluptas nostrum hic consectetur cumque, voluptatibus quo.
-        </p>
-        <p class="vignets" id="vignet3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis ab dolorem molestiae quis ullam.
-           Sunt iure eveniet numquam necessitatibus possimus eaque ipsa,
-           eius officiis maxime nostrum rerum asperiores aperiam est sapiente.
-           Adipisci, quia nisi aut ducimus voluptatem dolor beatae nobis voluptate non odio.
-           Voluptas nostrum hic consectetur cumque, voluptatibus quo.
-        </p>
+    <section id="valor" class="valors">
+        <div class="valor-container flex align-center justify-between">
+            <h1 class="valor-h1">Valeurs du groupe</h1>
+            <div class="vignets flex column align-center" id="vignet1">
+                <img  src="./assets/media/img/home/Design sans titre(1).png" alt="icône valeur 1">
+                <p>La responsabilisation et le sens du résultat</p>
+            </div>
+            <div class="vignets flex column align-center" id="vignet2">
+                <img  src="./assets/media/img/home/Design_sans_titre.png" alt="icône valeur 2">
+                <p>Le respect des personnes et de l'environnement</p>
+            </div>
+            <div class="vignets flex column align-center" id="vignet3">
+                <img  src="./assets/media/img/home/Design_sans_titre_1.png" alt="icône valeur 3">
+                <p>L'attention portée au client</p>
+            </div>
+        </div>
+        
     </section>
     <div class="activities-title">
         <div class="title">
-            <h1 class="newH1 flex justify-center color-white">Nos activités</h1>
+            <h1 class="newH1 flex justify-center align-center color-white">Nos activités</h1>
         </div>
     </div>
     <section class="activities flex column justify-center align-center">

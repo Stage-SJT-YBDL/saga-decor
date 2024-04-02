@@ -16,12 +16,33 @@
                         <input type="text" name="" id="" placeholder="Entreprise">
                         <input type="email" name="" id="" placeholder="Adresse mail">
                         <input type="text" name="" id="" placeholder="Objet de la demande">
+                        <div class="flex">
+                        <p>Votre demande concerne :</p>
+                        <div>
+                            <label for="saga-decor">Saga décor</label>
+                            <input type="radio" name="saga-decor" value="Saga décor">
+                        </div>
+                        <div>
+                            <label for="scd">Société charentaise de décors</label>
+                            <input type="radio" name="saga-decor" value="Saga décor">
+                        </div>
+                        </div>
+                        
                         <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                         <input class="green-button" type="submit" value="Envoyer" style="width: 50%;">
                     </form>
                 </div>
+                <div class="contact-center flex column align-center justify-around text-center pd2">
+                    <h1 class="form-title-scd">Décor en satinage</h1>
+                    <div class="grey-line"></div>
+                    <img class="form-logo" src="./assets/media/img/contact/contact-scd.png" alt="Logo Sage Décor blanc">
+                    <h2>1 rte Grands Champs, 16130 GENSAC LA PALLUE</h2>
+                    <h2>Contact:  Corinne Deboudt</h2>
+                    <H2>Email:  corinne.deboudt@saga-decor.com</H2>
+                    <h2>Tel: +33 (0)5 45 32 14 95</h2>
+                </div>
                 <div class="contact-right flex column align-center justify-around text-center pd2">
-                    <h1 class="form-title">Nos coordonées</h1>
+                    <h1 class="form-title">Autres décors</h1>
                     <div class="grey-line"></div>
                     <img class="form-logo" src="./assets/media/img/contact/logo-saga-blanc.png" alt="Logo Sage Décor blanc">
                     <h2>328 Rue Pasteur 60700 PONT SAINTE MAXENCE</h2>
