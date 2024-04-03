@@ -63,11 +63,11 @@ input[type="radio"].radio-color-dark-blue:checked {
     text-shadow: 1px 1px 1px white;
 }
 .white-title {
-    font-size: 64px;
+    font-size: 50px;
     color: white;
 }
 .black-p {
-    font-size: 64px;
+    font-size: 50px;
 }
 /*Button*/
 .green-button {
@@ -158,7 +158,7 @@ input[type="radio"].radio-color-dark-blue:checked {
     display: block;
 }
 /*Backgrounds*/
-.about, .offices, .contact, .home, .abt {
+.offices, .contact, .home, .abt {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 89vh;
@@ -170,7 +170,7 @@ input[type="radio"].radio-color-dark-blue:checked {
 /* about */
 .white-icons {
     width: 100%;
-    height: 120px;
+    height: 80px;
 }
 .about-article {
     height: 700px;
@@ -187,11 +187,52 @@ input[type="radio"].radio-color-dark-blue:checked {
     align-items: center;
     width: 800px;
     margin:1%;
-    
 }
-.about {
-    min-height: 67vh;
+.fusion {
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto;
 }
+.chiffres {
+    background-color: #981242;
+}
+/*Marquee about*/
+.marquee {
+    max-width: 100%;                  
+    margin: 1em auto 2em;
+    overflow: hidden;                      
+  }
+  .partenaires {
+    display: flex; /* Ajouté pour garantir l'alignement correct et le gap */
+    gap: 40px;
+  }
+  .partenaires img {
+   height: 350px;
+   width: 350px;
+  }
+  /* le bloc défilant */
+  .marquee .partenaires {
+    animation: defilement 40s linear infinite;
+    animation-fill-mode: forwards; /* S'assure que l'élément reste à la vue finale de l'animation avant de recommencer */
+  }
+  
+  @keyframes defilement {
+    0% {
+      transform: translateX(100%);        
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+  @-webkit-keyframes defilement { 
+    0% { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+  }
+  
+  @-o-keyframes defilement { 
+    0% { -o-transform: translateX(100%); }
+    100% { -o-transform: translateX(-100%); }
+  }
 /* Slider about */
 #slideImg {
     height: 650px;
@@ -205,15 +246,15 @@ input[type="radio"].radio-color-dark-blue:checked {
 
 .sec{
     position: relative;
-    background: #52a797;
-    padding: 100px;
+    background-image: linear-gradient(to right, #52a797 0%, #7B2242 100%) ;
+    padding: 50px 100px;
 }
 .sec h2 {
     font-size: 3em;
     margin-bottom: 10px;
 }
 .sec p {
-    font-size: 1em;
+    font-size: 30px;
     color: #fff;
     font-weight: 300;
 }
@@ -418,27 +459,47 @@ input[type="radio"].radio-color-dark-blue:checked {
     background-color: rgba(37, 55, 69, 0.5);
     border-radius: 50px 0 0 50px;
 }
+#radio1, #radio2 {
+    opacity: 0;
+    position: absolute;
+}
+.contact-input div {
+    gap: 20px;
+}
+#radio1 + label, #radio2 + label {
+    padding: 5px 10px; 
+    border: 2px solid #ccc;  
+    cursor: pointer;
+}
+#radio1:checked + label, #radio2:checked + label {
+    background-color: #ccc;
+}
+.contact-left, .contact-center, .contact-right {
+    width: 33%;
+}
 .contact-right, .contact-center {
     border-radius: 0 50px 50px 0 ;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     font-weight: bolder;
-    width: 550px;
 }
 .contact-center {
     border-radius: unset;
 }
-.contact-left form input, .contact-left form textarea, .contact-right form input {
+.contact-left form input, .contact-left form textarea {
     border-radius: 10px;
     min-height: 45px;
-    width: 500px;
     padding: 2%;
+    width: 90%;
 }
 .contact-right {
     height: 100%;
 }
 .contact-input {
     gap: 20px;
+}
+.contact-input label {
+    font-size: 25px;
 }
 .form-title, .form-title-scd {
     font-size: 48px;
@@ -471,44 +532,61 @@ input[type="radio"].radio-color-dark-blue:checked {
     color: white;
 }
 .art1 {
-    background-image: url(../media/img/sagadecor/Serigraphie-metaux-precieux-Saga-Decor-Cognac-50ans-2-546x390.jpg);
+    background-image: url(../media/img/sagadecor/serigraphie1.png);
 }
 .art2 {
-    background-image: url(../media/img/sagadecor/Serigraphie-Saga-decor-verre-bouteille-Bains-2-546x390.jpg);
+    background-image: url(../media/img/sagadecor/serigraphie1.png);
 }
 .art3 {
-    background-image: url(../media/img/sagadecor/Satinage-Saga-Decor-depolissage-bouteille-verre-Canton-domaine-2-546x390.jpg);
+    background-image: url(../media/img/sagadecor/satinage2.png);
 }
 .art4 {
-    background-image: url(../media/img/sagadecor/Satinage-Saga-decor-depolissage-bouteille-verre-Mamont-2-546x390.jpg);
+    background-image: url(../media/img/sagadecor/satinage3.png);
 }
 .art5 {
-    background-image: url(../media/img/sagadecor/Satinage-Saga-decor-depolissage-bouteille-verre-Mamont-2-546x390.jpg);
+    background-image: url(../media/img/sagadecor/satinage3.png);
 }
 .art6 {
-    background-image: url(../media/img/sagadecor/Satinage-Saga-decor-depolissage-bouteille-verre-Mamont-2-546x390.jpg);
+    background-image: url(../media/img/sagadecor/laquage4.png);
 }
 .expertise-title {
-    margin-top: 20px;
-    padding: 7px 20px;
+    margin-top: 15px;
+    padding: 7px 7px;
     height: fit-content;
     width: fit-content;
     border: 2px solid black;
 }
 .art2 p, .art3 p, .art6 p {
     width: 60%;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bold;
 }
 .art2 h2, .art3 h2, .art6 h2 {
-    font-size: 32px;
+    font-size: 36px;
 }
 .expertise-container {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
+    flex-direction: column;
 }
 .expertimg {
    height: 100vh;
+   width: 100%; 
+}
+
+.scd{width: 200px; height: 180px;}
+.sd{width: 200px; height: 190px;}
+.keyword a{
+    color: #063026;
+}
+.keyword:hover a{
+    color: #ffffff;
+}
+.keywordi a{
+    color: #ca4063;
+}
+.keywordi:hover a{
+    color: #063026;
 }
 /*            GALLERY           */
 .main-pg {
@@ -552,7 +630,10 @@ input[type="radio"].radio-color-dark-blue:checked {
     min-height: 50vh;
 }
 .gallery-odd {
-    background-image: linear-gradient(to top right, #d0d0d0 0%, #ffffff 10%, #d0d0d0 20%, #d0d0d0 80%, #ffffff 90%, #d0d0d0 100%);
+    background-image: url(../media/img/gallerie/gallerybg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -1050px;
 }
 .gallery-even {
     background-color: #BFC3C3;
@@ -562,12 +643,12 @@ input[type="radio"].radio-color-dark-blue:checked {
     align-self: flex-end;
 }
 .glr1{
-    width: 300px;
-    height: 750px;
+    width: 170px;
+    height: 400px;
 }
 .glr-minia {
-    height: 450px;
-    width: 200px;
+    height:265px;
+    width: 115px;
 }
 .galleryslide {
     width: 100%;
@@ -589,11 +670,19 @@ input[type="radio"].radio-color-dark-blue:checked {
 .sub-gallery {
     background-color: rgba(0, 132, 131, 0.5);
 }
+.minia-container {
+    gap: 20px;
+}
+.minia {
+    height: 145px;
+    width: 300px;
+    margin-top: -30px;
+}
 /*Galery slider*/
 .btn {
     border: none;
   background: transparent;
-  color: #020609;
+  color: #ffffff;
   cursor: pointer;
   font-size: 4rem;
 }
@@ -638,7 +727,7 @@ input[type="radio"].radio-color-dark-blue:checked {
     width: 50px;
 }
 .fusion {
-    height: 150px;
+    height: 250px;
     width: 600px;
 }
 .admin {
