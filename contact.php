@@ -16,24 +16,23 @@
                         <input type="text" name="" id="" placeholder="Entreprise">
                         <input type="email" name="" id="" placeholder="Adresse mail">
                         <input type="text" name="" id="" placeholder="Objet de la demande">
+                        <label class="color-white" for="">Votre demande concerne :</label>
                         <div class="flex">
-                        <p>Votre demande concerne :</p>
-                        <div>
-                            <label for="saga-decor">Saga décor</label>
-                            <input type="radio" name="saga-decor" value="Saga décor">
+                            <div>
+                                <input id="radio1" type="radio" name="option" value="Saga décor">
+                                <label for="radio1" class="radio-label">Saga décor</label>
+                            </div>
+                            <div>
+                                <input id="radio2" type="radio" name="option" value="Scd">
+                                <label for="radio2" class="radio-label">SCD</label>
+                            </div>
                         </div>
-                        <div>
-                            <label for="scd">Société charentaise de décors</label>
-                            <input type="radio" name="saga-decor" value="Saga décor">
-                        </div>
-                        </div>
-                        
                         <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                         <input class="green-button" type="submit" value="Envoyer" style="width: 50%;">
                     </form>
                 </div>
                 <div class="contact-center flex column align-center justify-around text-center pd2">
-                    <h1 class="form-title-scd">Décor en satinage</h1>
+                    <h1 class="form-title-scd">Satinage</h1>
                     <div class="grey-line"></div>
                     <img class="form-logo" src="./assets/media/img/contact/contact-scd.png" alt="Logo Sage Décor blanc">
                     <h2>1 rte Grands Champs, 16130 GENSAC LA PALLUE</h2>

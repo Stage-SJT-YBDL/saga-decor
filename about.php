@@ -3,9 +3,18 @@
 ?>
 <main>
     <section class="about">
-        <div>
-            <video id="vid" src="./assets/media/vid/qsn.mp4" style="width: 100%;" autoplay muted loop></video>
+        <div class="flex align-center justify-center">
+            <img class="fusion" src="./assets/media/img/home/fusion.png" alt="Logo fusion">
         </div>
+    </section>
+    <section class="sec">
+        <h2 class="text-center">Pôle Décor</h2>
+            <p>
+                Pôle Décor est une entité qui réunit Saga Décor et Charantaise, deux entreprises spécialisées dans la décoration de bouteilles. Ils offrent des services de satinage et de laquage de bouteilles, permettant ainsi de créer des designs uniques et attrayants.
+                <br><br>
+                Saga Décor est réputée pour son expertise dans la décoration de bouteilles, notamment en terme de sérigraphie, laquage et métalisation. La société Charentaise de Décor quant à elle s'est spécialisée dans le satinage de haute qualité.
+               
+            </p>
     </section>
     <section class="bg-dark-aqua">
         <div class="transparent-black-box flex justify-center align-center ">
@@ -28,17 +37,10 @@
             <input type="radio" class="radio-color-transparent" checked>
     </section>
     <div class="space1-5"></div>
-    <section class="offices">
-        <div class="transparent-black-box blur flex justify-center align-center color-white">
-            <p class="newH1">
-                <strong>N</strong>os locaux
-            </p>
-        </div>
-    </section>
     <section class="bg-light-gray flex justify-center pdv2">
         <h1 class="newH1 color-dark-aqua">L'entreprise en chiffre</h1>
     </section>
-    <section class="bg-dark-aqua">
+    <section class="chiffres">
         <div class="flex justify-around align-center pdv2">
             <div class="flex column justify-around align-center">
                 <p class="white-title">80</p>
@@ -57,55 +59,21 @@
             </div>
         </div>
         <div class="transparent-black-box blur flex justify-center align-center color-white">
-            <h1 class="newH1">La Production</h1>
+            <h1 class="newH1">Nos partenaires</h1>
         </div>
     </section>
-
-    <section>
-        <div class="flex justify-center align-center">
-            <div class="image-container">
-                <img class="about-article" src="./assets/media/img/Entreprise/about1.webp" alt="image production 1">
-                <div class=" flex justify-center align-center">
-                    <p>
-                        "Notre ligne de production avancée intègre des machines de pointe pour le soufflage et le formage du verre,
-                         garantissant une précision et une qualité inégalées dans la création de chaque bouteille décorée."
-                    </p>
-                </div>
-            </div>
-            <div class="image-container">
-                <img class="about-article" src="./assets/media/img/Entreprise/about2.webp" alt="image production 2">
-                <div class="flex justify-center align-center">
-                    <p>
-                        "Au cœur de notre atelier, des artisans expérimentés
-                        et des machines de décoration travaillent de concert pour appliquer
-                        des motifs uniques sur chaque bouteille,
-                        fusionnant art traditionnel et innovation technologique."
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-center align-center">
-            <div class="image-container">
-                <img class="about-article" src="./assets/media/img/Entreprise/about3.webp" alt="image production 3">
-                <div class="flex justify-center align-center">
-                    <p>
-                        "Notre processus de contrôle qualité utilise des technologies
-                        de pointe pour inspecter minutieusement chaque bouteille décorée,
-                        assurant que seuls les produits répondant à nos standards élevés atteignent nos clients."
-                    </p>
-                </div>
-            </div>
-            <div class="image-container">
-                <img class="about-article" src="./assets/media/img/Entreprise/about4.webp" alt="image production 4">
-                <div class="flex justify-center align-center">
-                    <p>
-                        "La phase finale de notre chaîne de production
-                        implique un système d'emballage automatisé et hautement efficace,
-                        veillant à ce que chaque bouteille décorée soit prête pour la distribution,
-                        tout en maintenant l'intégrité et l'esthétique du produit."
-                    </p>
-                </div>
-            </div>
+    <section class="marquee">
+        <div class="partenaires flex">
+            <img src="./assets/media/img/sagadecor/logo-perrier-jouet.png" alt="Logo partenaire">
+            <img src="./assets/media/img/sagadecor/Mamont-Tusk-Vodka-Saga-Decor-Logo.png" alt="Logo partenaire">
+            <img src="./assets/media/img/sagadecor/Pernod-Absinthe-Saga-decor-logo-e1443537430713.png" alt="Logo partenaire">
+            <img src="./assets/media/img/sagadecor/Bains-Whisky-Saga-Decor-Logo.png" alt="Logo partenaire">
+            <img src="./assets/media/img/sagadecor/logo-emile-noel.png" alt="Logo partenaire">
+            <img src="./assets/media/img/sagadecor/logo-evian.png" alt="Logo partenaire">
+            <img src="./assets/media/img/sagadecor/logo-grand-marnier.png" alt="Logo partenaire">
+            <img src="./assets/media/img/sagadecor/logo-hennessy.png" alt="Logo partenaire">
+            <img src="./assets/media/img/sagadecor/logo-loic-raison.png" alt="Logo partenaire">
+            <img src="./assets/media/img/sagadecor/logo-martell.png" alt="Logo partenaire">
         </div>
     </section>
 </main>

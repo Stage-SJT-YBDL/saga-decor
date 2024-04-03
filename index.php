@@ -5,10 +5,7 @@ include('header.php');
     <section class="home flex column justify-center align-center">
         
         <h1 class="home-title newH1 appear title-box flex column align-center">
-        <img class="fusion" src="./assets/media/img/home/fusion.png" alt="image fusion">
-            <div>
-            <span class="pole">Pôle</span><span class="decor">Décor</span>
-            </div>
+            <p class="color-white">Pôle Décor</p>
         </h1>
     </section>
     <section id="valor" class="valors">
