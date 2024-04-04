@@ -55,6 +55,7 @@
             </div>
             <div class="admin-line">
                 <table class="admin-table">
+           
                     <thead>
                         <tr class="bold">
                             <th>N°</th>
@@ -67,51 +68,34 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
-                            <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
-                            <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
-                            <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
-                            <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>Nouveaux locaux</td>
-                            <td>Jean Décor</td>
-                            <td>01/02/2024</td>
-                            <td><img src="./assets/media/img/admin/toggle-on-solid 1.png" alt="icône actif" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/pen-to-square-solid 1.png" alt="icône édition" class="panel-icon"></td>
-                            <td><img src="./assets/media/img/admin/trash-solid 1.png" alt="icône suppression" class="panel-icon"></td>
-                        </tr>
+                    <?php include_once('constant_bdd'); 
+                    $pdo = new PDO('mysql:host=$servername,dbname=$db_name', $username, $password);
+                    try {
+                        $sql = "SELECT * FROM articles";
+                        $req = $pdo->prepare($sql);
+                        $req->execute();
+                        $articles = $req->fetchAll(PDO::FETCH_ASSOC);   
+
+                        foreach ($articles as $article) {
+                            $id = htmlspecialchars($article['id']);
+                            $titre = htmlspecialchars($article['title']);
+                            $auteur = htmlspecialchars($article['author']);
+                            $date = htmlspecialchars($article['edit_time']);
+                            $desc = htmlspecialchars($article['desc']);
+
+                            echo "<tr>";
+                            echo "<td>$id</td>";
+                            echo "<td>$titre</td>";
+                            echo "<td>$auteur</td>";
+                            echo "<td>$date</td>";
+                            echo "<td>$desc</td>";
+                            echo "</tr>";
+                        }
+                        
+                    }catch (PDOException $e) {
+                        echo "Erreur : " . $e->getMessage();
+                    }
+                    ?>
                     </tbody>
                 </table>
             </div>
