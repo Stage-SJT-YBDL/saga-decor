@@ -3,29 +3,28 @@ include('header.php');
 ?>
 <main>
     <section class="home flex column justify-center align-center">
-        
         <h1 class="home-title newH1 appear title-box flex column align-center">
             <p class="color-white">Pôle Décor</p>
         </h1>
-    </section>
-    <section id="valor" class="valors">
-        <div class="valor-container flex align-center justify-between">
-            <h1 class="valor-h1">Valeurs du groupe</h1>
-            <div class="vignets flex column align-center" id="vignet1">
-                <img  src="./assets/media/img/home/Design sans titre(1).png" alt="icône valeur 1">
-                <p>La responsabilisation et le sens du résultat</p>
-            </div>
-            <div class="vignets flex column align-center" id="vignet2">
-                <img  src="./assets/media/img/home/Design_sans_titre.png" alt="icône valeur 2">
-                <p>Le respect des personnes et de l'environnement</p>
-            </div>
-            <div class="vignets flex column align-center" id="vignet3">
-                <img  src="./assets/media/img/home/Design_sans_titre_1.png" alt="icône valeur 3">
-                <p>L'attention portée au client</p>
+        <div id="valor" class="valors">
+            <div class="valor-container flex align-center justify-between">
+                <h1 class="valor-h1">Valeurs du groupe</h1>
+                <div class="vignets flex column align-center" id="vignet1">
+                    <img  src="./assets/media/img/home/Design sans titre(1).png" alt="icône valeur 1">
+                    <p>La responsabilisation et le sens du résultat</p>
+                </div>
+                <div class="vignets flex column align-center" id="vignet2">
+                    <img  src="./assets/media/img/home/Design_sans_titre.png" alt="icône valeur 2">
+                    <p>Le respect des personnes et de l'environnement</p>
+                </div>
+                <div class="vignets flex column align-center" id="vignet3">
+                    <img  src="./assets/media/img/home/Design_sans_titre_1.png" alt="icône valeur 3">
+                    <p>L'attention portée au client</p>
+                </div>
             </div>
         </div>
-        
     </section>
+  
     <div class="activities-title">
         <div class="title">
             <h1 class="newH1 flex justify-center align-center color-white">Nos activités</h1>

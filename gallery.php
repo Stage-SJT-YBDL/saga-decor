@@ -20,9 +20,6 @@
             </div>
             <div class="minia-container flex">
                 <img class="minia" src="./assets/media/img/accueil2/v6.png" alt="">
-                <!-- <img class="minia" src="./assets/media/img/sagadecor/Belle-Epoque.png" alt="">
-                <img class="minia" src="./assets/media/img/sagadecor/martell.png" alt="">
-                <img class="minia" src="./assets/media/img/sagadecor/Mamont.png" alt=""> -->
             </div>
         </article>
     </section>

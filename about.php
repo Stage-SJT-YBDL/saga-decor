@@ -20,25 +20,24 @@
         <div class="transparent-black-box flex justify-center align-center ">
             <h2 class="color-white newH1">Chronologie</h2>
         </div>
-        <div class="flex justify-center align-center pdv2">
-            <h2 class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        </div>
     </section>
     <div class="space1-5"></div>
-    <section class="flex justify-center mgh2">
+    <section class="flex column justify-center align-center mgh2">
         <div class="slider">
             <img src="./assets/media/img/Slider/Qui_Sommes_Nous/1.png" alt="1" id="slideImg" class="slide">
         </div>
-    </section>
-    <section class="flex justify-center mgh2">
-        <div class="space1"></div>
-            <input type="radio" class="radio-color-transparent" checked>
-            <input type="radio" class="radio-color-dark-blue" checked>
-            <input type="radio" class="radio-color-transparent" checked>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="point" data-label="Création de Saga décor"></div>
+                <div class="point" data-label="Produit phare"></div>
+                <div class="point" data-label="Expansion internationale"></div>
+                <div class="point" data-label="Nouvelle ère"></div>
+            </div>
+        </div>
     </section>
     <div class="space1-5"></div>
     <section class="bg-light-gray flex justify-center pdv2">
-        <h1 class="newH1 color-dark-aqua">L'entreprise en chiffre</h1>
+        <h1 class="newH1 color-red">L'entreprise en chiffre</h1>
     </section>
     <section class="chiffres">
         <div class="flex justify-around align-center pdv2">
