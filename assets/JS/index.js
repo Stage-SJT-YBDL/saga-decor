@@ -27,3 +27,14 @@ let act1 = document.querySelector('.act1');
 let act2 = document.querySelector('.act2');
 let act3 = document.querySelector('.act3');
 let act4 = document.querySelector('.act4');
+
+// défilement vers la section activités (page de garde)
+$(document).ready(function() {
+    $(".green-boutton").click(function(event) {
+      event.preventDefault();
+      var target = $(this).attr("href");
+      $("html, body").animate({
+        scrollTop: $(target).offset().top
+      }, 1000); 
+    });
+  });

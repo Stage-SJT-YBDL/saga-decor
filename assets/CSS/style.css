@@ -107,6 +107,35 @@ input[type="radio"].radio-color-dark-blue:checked {
     font-size: 30px;
     padding: 1%;
 }
+.myboutons{
+    display: flex;
+    margin: 1% 0;
+}
+
+.green-bouttons {
+    overflow: hidden;
+  }
+  
+.green-bouttons{
+    padding: 6px;
+}
+.green-boutton {
+    font-size: 28px;
+    font-weight: 200;
+    background-color: rgba(0, 132, 132, 0.5);
+    border: none;
+    color: white;
+    backdrop-filter: blur(3px);
+    box-shadow: 2px 2px rgb(56, 56, 56);
+    padding: .5em;
+}
+.green-boutton:hover{
+    background-color: #7B2242;
+    transition: background-color 1s;
+}
+html, body {
+  scroll-behavior: smooth;
+}
 /*Hover*/
 .menu-link a:hover {
     color: #008483;
@@ -174,7 +203,8 @@ input[type="radio"].radio-color-dark-blue:checked {
     margin-bottom: 1%;
 }
 .cookie-container {
-    height: 75px;
+    padding: 10px 0;
+    height: fit-content;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
@@ -237,6 +267,10 @@ input[type="radio"].radio-color-dark-blue:checked {
 .chiffres {
     background: linear-gradient(to right,#981242 0%, #0CC0DF 50%, #063026 100%);
 }
+.logo-fusion {
+    width: 300px;
+    margin: 20px auto;
+}
 /*Marquee about*/
 .marquee {
     max-width: 100%;                  
@@ -280,6 +314,7 @@ input[type="radio"].radio-color-dark-blue:checked {
     width: 90%;
     padding: 20px;
     position: relative;
+    height: 100px;
 }
 .timeline {
     position: relative;
@@ -291,8 +326,6 @@ input[type="radio"].radio-color-dark-blue:checked {
     bottom: -6px; /* Ajustez cette valeur pour déplacer le point vers le haut ou le bas par rapport à la ligne */
     width: 22px;
     height: 22px;
-    border-radius: 50%;
-    background-color: #000; /* Couleur des points */
     cursor: pointer;
 }
 .point::after {
@@ -303,13 +336,13 @@ input[type="radio"].radio-color-dark-blue:checked {
     transform: translateX(-50%) translateY(-10px);
     white-space: nowrap;
     color: #000; /* Couleur du texte */
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
 }
-.point:nth-child(1) { left: 0%; }
-.point:nth-child(2) { left: 33%; }
-.point:nth-child(3) { left: 66%; }
-.point:nth-child(4) { left: 100%; transform: translateX(-100%); }
+.point:nth-child(1) { left: 10%; }
+.point:nth-child(2) { left: 33%; top: 50px; }
+.point:nth-child(3) { left: 76%; }
+.point:nth-child(4) { left: 100%; top: 50px; transform: translateX(-100%); }
 /*News*/
 .body{
     min-height:95vh ;
@@ -318,7 +351,7 @@ input[type="radio"].radio-color-dark-blue:checked {
 .sec{
     position: relative;
     background-image: linear-gradient(to right, #063026 0% ,#52a797 50%, #7B2242 100%) ;
-    padding: 50px 100px;
+    padding: 10px 70px;
 }
 .sec h2 {
     font-size: 3em;
@@ -343,15 +376,13 @@ input[type="radio"].radio-color-dark-blue:checked {
 .act{
   font-size: 70px;
 }
-.im2 .im1{
+.im2, .im1{
     min-width: 300px; 
     height: 295px;
 }
 .box{
-    min-width: 280px; 
-    height: 300px;
-    box-shadow: 1px  #94aeb6de;
-    border: #7b22439d 1px solid;
+    min-width: 280px;
+    height: fit-content; 
 }
 .laquari{
     background-color:#008483;
@@ -366,13 +397,23 @@ input[type="radio"].radio-color-dark-blue:checked {
     padding: 30px; 
     box-shadow: 7px 6px 5px 2px #3c3f3e4d;
 }
+.laquar {
+    margin-top: -5px;
+}
 .ima{
     background-image: url(../media/img/sagadecor/Decorateur-haut-de-gamme-luxe-glass-verre-fond10.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 298px;
+    height: 20vh;
+    margin-top: -10px;
+}
+.mesbox {
+    gap: 20px;
+}
+.articles {
+   margin: 20px 0;
 }
 /* offices */
 .offices {
@@ -474,6 +515,7 @@ right: 0;
 }
 .act-ttl1 {
     font-size: 38px;
+    width: fit-content;
     color: white;
     text-shadow: 1px 1px black;
 }
@@ -492,6 +534,7 @@ right: 0;
 #radio1, #radio2 {
     opacity: 0;
     position: absolute;
+    width: fit-content;
 }
 .contact-input div {
     gap: 20px;
@@ -614,42 +657,11 @@ right: 0;
     color: #063026;
 }
 /*            GALLERY           */
-.main-pg {
-    background-image: url(../media/img/gallerie/BACKGROUND.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 85vh;
-}
-.sec1 {
-    min-height: 85vh;
-}
-.div2 p, .div3 p {
-    font-size: 30px;
-    font-weight: bold;
-}
-.title1 h2{
-    background-color: black; opacity: 49%;
-    color: white;
-    width: 460px ;
-}
 .white-stripe {
     height: 2px;
     width: 30%;
     background-color: white;
 } 
-/* Bouton gallery */ 
-#presentationgalerie{
-    margin: 0 auto;
-    border-radius: 50px;
-    font-size: 32px;
-    background-color: rgba(0, 132, 132, 0.5);
-    border: none;
-    color: white;
-    backdrop-filter: blur (3px);
-    padding: 1%;
-    box-shadow: 2px 2px black;
-}
 /* SECTION & ARTICLE  GALLERY */ 
 .gallery {
     min-height: 50vh;
@@ -927,16 +939,36 @@ right: 0;
 }
 /*Responsive*/
 @media screen and (max-width:850px) {
-   .menu-link {
-    display: none;
-   }
+    .menu-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu-link {
+        /* display: none; */
+    }
+    .footer-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-link {
+        font-size: 20px;
+    }
+    .cookie-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cookie-right, .cookie-left {
+        width: 90%;
+    }
    .home {
     background-position: -350px 0;
    }
    .valor-container {
+    width: 100%;
     flex-direction: column;
    }
    #valor {
+    width: 100%;
     position: relative;
    } 
    .home-title {
@@ -962,6 +994,10 @@ right: 0;
    .mesbox {
     flex-direction: column;
    }
+   .logo-fusion {
+    width: 230px;
+    height: 100px;
+   }
    .fusion {
     height: 200px;
     width: 450px;
@@ -980,41 +1016,47 @@ right: 0;
     font-size: 48px;
    }
    .art2 {
-    background-position: -600px 0;
+    background-position: -400px 0;
    }
    .expertimg {
     object-fit: cover;
    }
    .contact-form {
     flex-direction: column;
-    height: 1180px;
-   }
-   .contact-left, .contact-center, .contact-right {
-    position: absolute;
+    height: 1700px;
    }
    .contact-left {
-    width: 100%;
+    position: absolute;
+    width: 95%;
     border-radius: 25px;
-    top: 660px;
-    left: 0;
+    top: 1250px;
+    left: 20px;
+    right: 10px;
    }
-   .contact-center {
-    width: 50%;
+   .contact-center, .contact-right {
+    position: absolute;
+    width: 93%;
     height: 475px;
-    left: 0;
+    border-radius: 25px;
+    left: 30px;
+    right: 30px;
    }
    .contact-right {
-    width: 50%;
-    right: 0;
-    height: 475px;
+    top: 760px;
+   }
+   .ima {
+    height: 20vh;
    }
 }
-@media  screen and (max-width:460px) {
+@media  screen and (max-width:500px) {
+    .menu-link {
+        font-size: 16px;
+    }
     .home-title p {
         font-size:40px;
     }
     .act2 {
-        background-position: -350px 0; 
+        background-position: -300px 0; 
     }
     .act3 {
         background-position: -200px 0;
@@ -1062,5 +1104,52 @@ right: 0;
     }
     .galleryslide {
         justify-content: center;
+    }
+    .logo {
+        height: 50px;
+        width: 90px;
+    }
+    .icon-admin {
+        height: 20px;
+        width: 20px;
+    }
+    .gallery-odd {
+        height: 50vh;
+    }
+    .contact-center, .contact-left, .contact-right {
+        left: 10px;
+        right: 10px;
+    }
+    .contact-right {
+        top: 700px;
+    }
+    .contact-left {
+        top: 1200px;
+    }
+    #vlrgrp {
+        font-size: 25px;
+    }
+    .im2, .im1{
+        height: 185px;
+    }
+    .articles {
+        margin: 5px 0;
+    }
+    .logo-fusion {
+        width: 150px;
+        height: 70px;
+       }
+    .sec p {
+        font-size: 16px;
+    }
+        .point:nth-child(1) { left: 25%; }
+        .point:nth-child(2) { top: 34px; }
+        .point:nth-child(3) { left:60%; top: 4px; }
+        .point:nth-child(4) { left: 80%; }
+    #chiffres-title {
+        font-size: 24px;
+    }
+    .scd{
+        width: 150px; height: 140px;
     }
 }
