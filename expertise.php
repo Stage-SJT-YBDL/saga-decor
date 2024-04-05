@@ -6,7 +6,7 @@
         <div class="flex">
           <article class="art2 expertise-article">
             <div class="expertise-container flex column justify-around align-center">
-              <h2>Sérigraphies</h2>
+              <h2>Sérigraphie</h2>
               <p class="text-center">La <span class="keyword"><a href="expertise.php">sérigraphie</a></span> permet une multitude d’effets des plus variés :
                 Luminescent : l’encre ou l’émail se révèle à la lumière noire
                 Thermosensible : l’encre se révèle au chaud ou au froid

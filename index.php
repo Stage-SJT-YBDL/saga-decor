@@ -6,6 +6,10 @@ include('header.php');
         <h1 class="home-title newH1 appear title-box flex column align-center">
             <p class="color-white">Pôle Décor</p>
         </h1>
+        <div class="myboutons">
+            <div class="green-bouttons"><a href="news.php"><button class="green-boutton">Entrer sur le site</button></a></div>
+            <div class="green-bouttons"><a href="index.php#activities-title"><button class="green-boutton">Voir nos Activités</button></a></div>
+        </div>
         <div id="valor" class="valors">
             <div class="valor-container flex align-center justify-between">
                 <h1 class="valor-h1">Valeurs du groupe</h1>
@@ -24,13 +28,13 @@ include('header.php');
             </div>
         </div>
     </section>
-  
     <div class="activities-title">
+    <a href="activities-title" name="activities-title"></a>
         <div class="title">
             <h1 class="newH1 flex justify-center align-center color-white">Nos activités</h1>
         </div>
     </div>
-    <section class="activities flex column justify-center align-center">
+    <section id="activities-title" class="activities flex column justify-center align-center">
         <div class="flex justify-center align-center">
             <div class="act1 flex column align-center justify-center color-white">
                 <h2 id="ttl1" class="act-ttl1">Sérigraphie</h2>
@@ -39,7 +43,7 @@ include('header.php');
                 repudiandae architecto nulla illo itaque commodi vitae placeat,
                 temporibus sapiente consequuntur ea repellat voluptatem nostrum, ipsam dicta.
                 </p>
-                <button class="square-orange-button" style="width: 150px;">Voir</button>
+                <a href="expertise.php"><button class="square-orange-button" style="width: 150px;">Voir</button></a>
             </div>
             <div id="act2" class="act2 flex column align-center justify-center color-white">
                 <h2 class="act-ttl1">Laquage</h2>
@@ -48,7 +52,7 @@ include('header.php');
                     repudiandae architecto nulla illo itaque commodi vitae placeat,
                     temporibus sapiente consequuntur ea repellat voluptatem nostrum, ipsam dicta.
                 </p>
-                <button class="square-orange-button" style="width: 150px;">Voir</button>
+                <a href="expertise.php"><button class="square-orange-button" style="width: 150px;">Voir</button></a>
             </div>
         </div>
         <div class="flex">
@@ -59,7 +63,7 @@ include('header.php');
                     repudiandae architecto nulla illo itaque commodi vitae placeat,
                     temporibus sapiente consequuntur ea repellat voluptatem nostrum, ipsam dicta.
                 </p>
-                <button class="square-orange-button" style="width: 150px;">Voir</button>
+                <a href="expertise.php"><button class="square-orange-button" style="width: 150px;">Voir</button></a>
             </div>
             <div class="act4 flex column align-center justify-center color-white">
                 <h2 class="act-ttl1">Accessoires</h2>
@@ -68,7 +72,7 @@ include('header.php');
                     repudiandae architecto nulla illo itaque commodi vitae placeat,
                     temporibus sapiente consequuntur ea repellat voluptatem nostrum, ipsam dicta.
                 </p>
-                <button class="square-orange-button" style="width: 150px;">Voir</button>
+                <a href="expertise.php"><button class="square-orange-button" style="width: 150px;">Voir</button></a>
             </div>
         </div>
         <div class="act5 flex column align-center justify-center color-white">

@@ -24,6 +24,6 @@
             <li class="menu-link"><a href="contact.php">Contact</a></li>
             <li class="menu-link"><a href="gallery.php">Galerie</a></li>
         </ul>
-        <a href="admin.php"><img class="icon-admin" src="assets/media/img/admin/gear-solid-black.svg" alt="icône vers panel admin"></a>
+        <a href="admin.php"><img class="icon-admin" src="assets/media/img/admin/bars-solid.svg" alt="icône vers panel admin"></a>
     </nav>
 </header>

@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Apr 04, 2024 at 11:13 AM
+-- Host: localhost
+-- Generation Time: Apr 05, 2024 at 03:34 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -54,20 +54,36 @@ INSERT INTO `admin` (`admin_id`, `admin_pseudo`, `admin_first_name`, `admin_last
 
 CREATE TABLE `articles` (
   `title` varchar(120) DEFAULT NULL,
-  `id` int(11) DEFAULT NULL,
-  `image` varchar(1000) DEFAULT NULL,
-  `desc` longtext DEFAULT NULL,
+  `id` int(11) NOT NULL,
+  `image` blob DEFAULT NULL,
+  `description` longtext DEFAULT NULL,
   `status` tinyint(1) DEFAULT NULL,
   `author` varchar(300) DEFAULT NULL,
-  `edit_time` date NOT NULL
+  `edit_time` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `articles`
 --
 
-INSERT INTO `articles` (`title`, `id`, `image`, `desc`, `status`, `author`, `edit_time`) VALUES
-('test', 1, '', 'test', NULL, 'test', '2024-04-03');
+INSERT INTO `articles` (`title`, `id`, `image`, `description`, `status`, `author`, `edit_time`) VALUES
+('ariana grande', 5, NULL, 'arianaaaaaaaaaaaaaa', NULL, NULL, '2024-04-05 13:09:09'),
+('test', 6, NULL, 'testttttttttttttt', NULL, NULL, '2024-04-05 13:13:01'),
+('test', 7, NULL, 'testttttttttttttt', NULL, NULL, '2024-04-05 13:21:56'),
+('test', 8, NULL, 'test', NULL, NULL, '2024-04-05 13:22:13');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `galerie`
+--
+
+CREATE TABLE `galerie` (
+  `id` int(11) NOT NULL,
+  `img` varchar(1000) DEFAULT NULL,
+  `desc` longtext DEFAULT NULL,
+  `title` varchar(120) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
@@ -82,25 +98,6 @@ CREATE TABLE `messages` (
   `delivered_time` date DEFAULT NULL,
   `view_status` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `site_settings`
---
-
-CREATE TABLE `site_settings` (
-  `setting_name` varchar(255) NOT NULL,
-  `setting_value` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `site_settings`
---
-
-INSERT INTO `site_settings` (`setting_name`, `setting_value`) VALUES
-('primary_color', '#008483'),
-('secondary_color', '#FFA500');
 
 -- --------------------------------------------------------
 
@@ -124,10 +121,16 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`admin_id`);
 
 --
--- Indexes for table `site_settings`
+-- Indexes for table `articles`
 --
-ALTER TABLE `site_settings`
-  ADD PRIMARY KEY (`setting_name`);
+ALTER TABLE `articles`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `galerie`
+--
+ALTER TABLE `galerie`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -138,6 +141,18 @@ ALTER TABLE `site_settings`
 --
 ALTER TABLE `admin`
   MODIFY `admin_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `articles`
+--
+ALTER TABLE `articles`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `galerie`
+--
+ALTER TABLE `galerie`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -70,7 +70,7 @@
 include_once('constant_bdd.php'); 
 
 try {
-    $sql = "SELECT id, title, author, edit_time, `desc` FROM articles";
+    $sql = "SELECT id, img, title, desc FROM galerie";
     $req = $conn->prepare($sql);
     $req->execute();
     $articles = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -78,15 +78,11 @@ try {
     foreach ($articles as $article) {
         $id = htmlspecialchars($article['id']);
         $titre = htmlspecialchars($article['title']);
-        $auteur = htmlspecialchars($article['author']);
-        $date = htmlspecialchars($article['edit_time']);
         $desc = htmlspecialchars($article['desc']);
 
         echo "<tr>";
         echo "<td>$id</td>";
         echo "<td>$titre</td>";
-        echo "<td>$auteur</td>";
-        echo "<td>$date</td>";
         echo "<td>$desc</td>";
         echo "<td><a href='modifier-article.php?id=$id'>Modifier</a></td>";
         echo "<td><a href='supprimer-article.php?id=$id'>Supprimer</a></td>";

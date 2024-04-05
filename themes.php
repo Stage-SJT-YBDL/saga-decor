@@ -6,11 +6,11 @@
     <section class="admin-menu">
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/file-regular(1).svg" alt="icône pages">
-            <p><a href="admin.html">Pages</a></p>
+            <p><a href="admin.php">Pages</a></p>
         </div>    
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/envelope-regular.svg" alt="icône Messagerie">
-            <p><a href="messagerie.html">Messagerie</a></p>    
+            <p><a href="messagerie.php">Messagerie</a></p>    
         </div>
         <div class="admin-category flex">
             <img class="panel-icon" src="./assets/media/img/admin/scale-unbalanced-flip-solid.svg" alt="icône gestion des droits">

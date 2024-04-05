@@ -37,14 +37,14 @@
     <section class="admin-screen">
     <div class="admin-screen-main flex">
         <div class="contact-left pd2" id="form-add">
-            <form class="contact-input flex align-center column pdv2" action="post">
+            <form class="contact-input flex align-center column pdv2" action="post_article.php" method="POST">
                 <input type="text" name="title" id="article-title" placeholder="Titre" oninput="preview()">
                 <label for="file" class="flex" style="width: 100%; margin-left: 100px; gap: 20px; align-items: center; cursor: pointer;">
                     <img class="plus" src="./assets/media/img/admin/circle-plus-solid.svg" style="height: 30px; width: 30px;" alt="icône ajout photo">
                      Importez votre image
-                    <input onchange="preview()" hidden type="file" id="file">
+                    <input onchange="preview()" hidden type="file" id="file" name="image">
                 </label>
-                <textarea name="article-content" id="article-content" cols="30" rows="10" placeholder="Message" oninput="preview()"></textarea>
+                <textarea name="desc" id="article-content" cols="30" rows="10" placeholder="Message" oninput="preview()"></textarea>
                 <input class="green-button" type="submit" value="Envoyer" style="width: 50%;">
             </form>
         </div>

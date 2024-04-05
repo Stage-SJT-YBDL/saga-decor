@@ -12,7 +12,7 @@
         <h1 class="act flex  justify-center">Actualités</h1>
     </section>
     <div class="mesbox flex justify-around align-center"> 
-        <div class="articles pd2 justify-center align-center">
+        <div class="articles justify-center align-center">
              <div class="box justify-center">
                 <img class="im1" src="./assets/media/img/sagadecor/biere-chti-saison-brasserie-castelain-biere-de-garde-saga-decor-serigraphie-email-actualite.jpg" width="400px" height="300px" alt="image">
             </div>
@@ -30,7 +30,7 @@
                 <img class="im2" src="./assets/media/img/sagadecor/alalia-546x390.jpg" width="400px" height="300px" alt="image2">
             </div>
        </div>
-       <div class="articles pd2 justify-center align-center">
+       <div class="articles justify-center align-center">
             <div class="box justify-center">
                 <img class="im1" src="./assets/media/img/sagadecor/belle-epoque-2004-en-coffret6-546x390.jpg" width="445px" height="300px" alt="image">
             </div>
@@ -41,7 +41,7 @@
         </div> 
     </div>
     <div class="mesbox flex justify-around align-center"> 
-        <div class="articles pd2 justify-center align-center">
+        <div class="articles justify-center align-center">
              <div class="box justify-center">
                 <img class="im1" src="./assets/media/img/sagadecor/1-kringle-546x390.jpg" width="400px" height="300px" alt="image">
             </div>
@@ -59,7 +59,7 @@
                 <img class="im2" src="./assets/media/img/sagadecor/1-Ciroc3-546x390.jpg"  width="400px" height="300px">
             </div>
        </div>
-       <div class="articles pd2 justify-center align-center">
+       <div class="articles justify-center align-center">
             <div class="box justify-center">
                 <img class="im1" src="./assets/media/img/sagadecor/Sérigraphie-satinage-laquage9.jpg" width="400px" height="300px" alt="image">
             </div>

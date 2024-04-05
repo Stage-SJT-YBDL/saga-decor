@@ -8,13 +8,13 @@
         </div>
     </section>
     <section class="sec">
-        <h2 class="text-center">Pôle Décor</h2>
-            <p>
-                Pôle Décor est une entité qui réunit Saga Décor et Charantaise, deux entreprises spécialisées dans la décoration de bouteilles. Ils offrent des services de satinage et de laquage de bouteilles, permettant ainsi de créer des designs uniques et attrayants.
-                <br><br>
-                Saga Décor est réputée pour son expertise dans la décoration de bouteilles, notamment en terme de sérigraphie, laquage et métalisation. La société Charentaise de Décor quant à elle s'est spécialisée dans le satinage de haute qualité.
-               
-            </p>
+        <img class="logo-fusion flex justify-center" src="./assets/media/img/header/logo1.png" alt="Logo Pôle décor">
+        <p>
+            Pôle Décor est une entité qui réunit Saga Décor et Charantaise, deux entreprises spécialisées dans la décoration de bouteilles. Ils offrent des services de satinage et de laquage de bouteilles, permettant ainsi de créer des designs uniques et attrayants.
+            <br><br>
+            Saga Décor est réputée pour son expertise dans la décoration de bouteilles, notamment en terme de sérigraphie, laquage et métalisation. La société Charentaise de Décor quant à elle s'est spécialisée dans le satinage de haute qualité.
+            
+        </p>
     </section>
     <section class="bg-dark-aqua">
         <div class="transparent-black-box flex justify-center align-center ">
@@ -37,7 +37,7 @@
     </section>
     <div class="space1-5"></div>
     <section class="bg-light-gray flex justify-center pdv2">
-        <h1 class="newH1 color-red">L'entreprise en chiffre</h1>
+        <h1 class="newH1 color-red" id="chiffres-title">L'entreprise en chiffre</h1>
     </section>
     <section class="chiffres">
         <div class="flex justify-around align-center pdv2">
